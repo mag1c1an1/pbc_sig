@@ -46,9 +46,9 @@ else(debug)
 set(optflags "-O3 -ffast-math -fomit-frame-pointer")
 endif(debug)
 
-set(warnflags "-Wall -W -Wfloat-equal -Wendif-labels -Wshadow  \\
-    -Wpointer-arith -Wcast-align -Wstrict-prototypes \\
-    -Wredundant-decls"
-)
+# set(warnflags "-Wall -W -Wfloat-equal -Wendif-labels -Wshadow  \\
+#     -Wpointer-arith -Wcast-align -Wstrict-prototypes \\
+#     -Wredundant-decls"
+# )
 
 set(CMAKE_C_FLAGS "-pipe ${warnflags} ${optflags}")
